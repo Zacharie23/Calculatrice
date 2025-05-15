@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Calculatrice JavaScript</title>
+</head>
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+  <h1>Calculatrice</h1>
+
+  <input id="nombre1" type="number" placeholder="Premier nombre">
+  <input id="nombre2" type="number" placeholder="Deuxième nombre">
+
+  <br><br>
+
+  <select id="operation">
+    <option value="addition">Addition</option>
+    <option value="soustraction">Soustraction</option>
+    <option value="multiplication">Multiplication</option>
+    <option value="division">Division</option>
+  </select>
+
+  <br><br>
+
+  <button id="calculer">Calculer</button>
+
+  <p id="resultat">Résultat : </p>
+
+  <h2>Historique</h2>
+  <div id="historique"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
