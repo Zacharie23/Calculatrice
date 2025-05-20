@@ -1,0 +1,23 @@
+{
+  "name": "calculatrice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calcul.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zacharie23/Calculatrice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zacharie23/Calculatrice/issues"
+  },
+  "homepage": "https://github.com/Zacharie23/Calculatrice#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

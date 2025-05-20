@@ -1,4 +1,5 @@
 let historique = [];
+import {addition, soustraction, multiplication, division} from "./calcul.js";
 
 document.getElementById("calculer").addEventListener("click", function() {
   let a = parseFloat(document.getElementById("nombre1").value);
@@ -8,18 +9,22 @@ document.getElementById("calculer").addEventListener("click", function() {
 
   if (isNaN(a) || isNaN(b)) {
     resultat = "Entrez deux nombres valides.";
-  } else {
+  } 
+  else {
     if (operation === "addition") {
-      resultat = a + b;
-    } else if (operation === "soustraction") {
-      resultat = a - b;
-    } else if (operation === "multiplication") {
-      resultat = a * b;
-    } else if (operation === "division") {
+      resultat = addition(a, b);
+    } 
+    else if (operation === "soustraction") {
+      resultat = soustraction(a, b);
+    } 
+    else if (operation === "multiplication") {
+      resultat = multiplication(a, b);
+    } 
+    else if (operation === "division") {
       if (b === 0) {
         resultat = "Impossible de diviser par zéro.";
       } else {
-        resultat = a / b;
+        resultat = division(a, b);
       }
     }
   }
